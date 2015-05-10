@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sortr</title>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.1/semantic.min.css'/>
+    <style type='text/css'>
+      body {
+        padding-top: 2em;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='ui grid'>
+      <div class='ui one twelve wide column middle aligned centered'>
+        <h1>sortr</h1>
+        <form id='input-form' class='ui form grid'>
+          <div id='messages' class='ui sixteen wide column'></div>
+          <div class='ui eight wide column'>
+            <textarea id='input' class='ui field' rows='50'></textarea>
+          </div>
+          <div class='ui eight wide column'>
+            <textarea id='output' class='ui field' readonly='readonly' rows='50'></textarea>
+          </div>
+        </form>
+        <script type="text/javascript" src="sorter.js"></script>
+      </body>
+    </div>
+  </div>
+</html>
