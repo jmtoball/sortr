@@ -9,25 +9,45 @@
         padding-top: 2em;
       }
       h1 {
-        font-size: 5rem;
+        font-size: 5rem !important;
+        margin-bottom: 0 !important;
+      }
+      #input, #output {
+        font-family: monospace;
+        min-height: 20em;
       }
     </style>
   </head>
   <body>
-    <div class='ui grid'>
-      <div class='ui one twelve wide column middle aligned centered'>
-        <h1>sortr</h1>
-        <form id='input-form' class='ui form grid'>
-          <div id='messages' class='ui sixteen wide column'></div>
-          <div class='ui eight wide column'>
-            <textarea id='input' class='ui field' rows='50'></textarea>
+    <form id='input-form' class='ui page grid form'>
+      <h1 class='ui header'>sortr</h1>
+      <div id='messages' class='ui sixteen wide column'></div>
+      <div class='ui row'>
+        <div class='ui eight wide column'>
+          <div class='ui field'>
+            <label>Depth</label>
+            <select id='depth' class='ui selection dropdown'>
+              <option value='-2'>unlimited</option>
+            </select>
           </div>
-          <div class='ui eight wide column'>
-            <textarea id='output' class='ui field' readonly='readonly' rows='50'></textarea>
-          </div>
-        </form>
-        <script type="text/javascript" src="sorter.js"></script>
-      </body>
-    </div>
-  </div>
+        </div>
+      </div>
+      <div class='ui form row'>
+        <div class='ui eight wide column field'>
+          <label>Input</label>
+          <textarea id='input' class='ui field'></textarea>
+        </div>
+        <div class='ui eight wide column field'>
+          <label>Output</label>
+          <textarea id='output' readonly='readonly'></textarea>
+        </div>
+      </div>
+      <div class='ui row'>
+        <div class='ui sixteen wide column right aligned'>
+          by <a href='http://jmtoball.github.io/'>jmtoball</a>
+        </div>
+      </div>
+    </form>
+    <script type="text/javascript" src="sorter.js"></script>
+  </body>
 </html>
