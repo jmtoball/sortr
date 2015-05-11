@@ -145,6 +145,6 @@ document.getElementById("input-form").addEventListener("submit", function (ev) {
 document.getElementById("input").addEventListener("keyup", sort);
 document.getElementById("depth").addEventListener("change", depthChanged);
 
-showMessage("Welcome to sortr. Paste indented code (For example a YAML file)" +
-            "into the left pane. Given the indentation is valid, you will get a" +
-            "sorted output on the right.");
+showMessage("Welcome to sortr. Paste indented code (For example a YAML file) " +
+            "into the left pane. Given the indentation is valid, you will " +
+            "get a sorted output on the right.");
